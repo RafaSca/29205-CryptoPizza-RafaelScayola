@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/pizzaGato.jpg" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <div class="layout">
+        <header>
+            <nav class="nav-bar">
+                <a class="nav-bar__logo" href="../index.html"><img src="../img/pizzaGato.jpg" alt="Logo" width="150px"></a>
+                <ul class="nav-bar__list">
+                    <li class="nav-bar__item"><a href="../pages/concepto.html">Concepto</a></li>
+                    <li class="nav-bar__item"><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-bar__item"><a href="../pages/menu.html">Menú</a></li>
+                    <li class="nav-bar__item"><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="corte"></div>
+        <main>
+            <form class="main__form" action="">
+                <fieldset class="main__datos" id="datosDeContacto">
+                    <legend class="main__legend font-style-techomono">Datos de Contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan Carlos">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Fantasma">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@cryptopizza.com">
+                    <label for="fechaDeNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento">
+                    <label for="celular">Celular</label>
+                    <input type="tel" name="celular" id="celular" placeholder="ej: 11-1234-5678">
+                </fieldset>
+                <fieldset class="main__encuesta" id="queTipoDePersonaSos">
+                    <legend class="main__legend font-style-techomono">Que tipo de persona sos?</legend>
+                    <label for="pizzaConAnana">Pizza con Ananá</label>
+                    <input type="radio" name="ananaSiNo" id="pizzaConAnana">
+                    <label for="pizzaSinAnana">Pizza sin Ananá</label>
+                    <input type="radio" name="ananaSiNo" id="pizzaSinAnana"><hr>
+                    <label for="gatos">Gatos</label>
+                    <input type="radio" name="CatsOrDogs" id="gatos">
+                    <label for="perros">Perros</label>
+                    <input type="radio" name="CatsOrDogs" id="perros"><hr>
+                    <p>Juegos Favoritos:</p>
+                    <label for="uno">Uno</label>
+                    <input type="checkbox" name="juegosFavoritos" id="uno">
+                    <label for="elPisoEsLava">El piso es lava!!</label>
+                    <input type="checkbox" name="juegosFavoritos" id="elPisoEsLava" required>
+                    <label for="truco">Truco</label>
+                    <input type="checkbox" name="juegosFavoritos" id="truco">
+                    <label for="bingo">Bingo</label>
+                    <input type="checkbox" name="juegosFavoritos" id="bingo">
+                </fieldset>
+                <input class="main__button vaciar" type="reset" value="Vaciar">
+                <input class="main__button enviar" type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer>
+            <p class="footer__copyright font-style-techomono">Crypto Pizza © </p>
+            <p class="footer__firm">Designed by RaScaLa</p>
+        </footer>
+    </div>
+</body>
+</html>

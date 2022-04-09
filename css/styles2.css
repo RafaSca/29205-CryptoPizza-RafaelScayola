@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:white
+}
+/* estilos creado para aplicar a varios elementos */
+
+.font-style-techomono {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.font-style-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* contenedor que hice para no hacer que el body sea el contenedor grid padre */
+.layout{
+    display: grid;
+    grid-template-areas:    "a a a"
+                            "b b b"
+                            "c c c"
+                            "d d d";
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+/* estilos del header, que incluye el logo, el título y la barra de navegación */
+header {
+    grid-area: a;
+    background-image: url(../img/fondoHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 100vh 100vw rgba(100, 100, 100, 0.486);
+    
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    margin: 2vh 10%;
+
+}
+
+.nav-bar__logo img {
+    width: 180px;
+    border-radius: 50%;
+    border: rgb(5, 5, 5) solid 15px;
+}
+
+.nav-bar__list {
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    column-gap: 2em;
+    
+}
+
+.nav-bar__item a{
+    font-size: 2rem;
+    background-color: rgb(202, 16, 10);
+    border-radius: 40%;
+    text-decoration: none;
+}
+
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+}
+ /* Un bloque que hice para generar un corte estetico entre el header y el main, me gustaría que fuera algo con bordes irregulares pero no sé como hacerlo o si se inserta una imagen */
+
+ .corte {
+    grid-area: b;
+    height: 10vh;
+    background-image: linear-gradient(to right, rgba(194, 194, 194, 0.534), rgba(66, 50, 50, 0.527), rgba(122, 31, 31, 0.514));
+}
+
+/* estilos del main, que incluye el párrafo principal y las imágenes */
+
+main {
+    grid-area: c;
+    background-image: url(../img/fondoBody.jpg);
+    background-size: cover;
+    box-shadow: inset 100vh 100vw rgba(100, 100, 100, 0.486);
+    
+     
+}
+
+.index-main {
+    display:grid;
+    grid-template-areas:    " . amain . "
+                            " . bmain . "
+                            " . cmain . ";
+    grid-template-columns: 20% auto 20%;
+    justify-content: center;
+    row-gap: 5vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.main__text {
+    grid-area: amain;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.main__img-index1 {
+    grid-area: bmain;
+    justify-self: center;
+    
+}
+
+.main__img-index2 {
+    grid-area: cmain;
+    justify-self: center;
+}
+
+        /* estilos del main de nosotros.html */
+
+.laFamilia {
+    display: grid;
+    grid-template-areas:    " . mujer1 parrafoM1 . "
+                            " . hombre1 parrafoH1 . " 
+                            " . mujer2 parrafoM2 . "
+                            " . hombre2 parrafoH2 . ";
+    grid-template-columns: 20% auto 15% 20%;
+    justify-content: center;
+    row-gap: 2%;
+}
+
+.mujer1 {
+    grid-area: mujer1;
+    
+}
+
+.mujer2 {
+    grid-area: mujer2;
+}
+
+.hombre1 {
+    grid-area: hombre1;
+}
+
+.hombre2 {
+    grid-area: hombre2;
+}
+.parrafoM1{
+    grid-area: parrafoM1;
+}
+.parrafoM2{
+    grid-area: parrafoM2;
+}
+.parrafoH1{
+    grid-area: parrafoH1;
+}
+.parrafoH2{
+    grid-area: parrafoH2;
+}
+/* estilos del main de menu.html */
+.main__img-menu {
+        display: flex;
+    justify-content: center;
+}
+.main__img-menu img{
+    width: 70vw;
+}
+
+/* estilos del main de concepto.html */
+.concepto {
+    width: 70vw;
+    margin: auto;
+}
+
+/* estilos del main de contacto */
+
+.main__form {
+    font-size: 2rem;
+    width:fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "datos datos"
+                         "encuesta encuesta"
+                         "vaciar enviar";
+    row-gap: 5%;                    
+    
+}
+
+.main__datos{
+    grid-area: datos;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+.main__encuesta{
+    grid-area: encuesta;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+.vaciar {
+    grid-area: vaciar;
+}
+
+.enviar {
+    grid-area: enviar;
+}
+
+.main__button {
+    color: black;
+    font-size: 1.2rem;
+    width: fit-content;
+    justify-self: center;
+}
+
+/* estilos del footer */
+footer {
+    grid-area: d;
+    background-image: linear-gradient(to right, rgba(194, 194, 194, 0.534), rgba(66, 50, 50, 0.527), rgba(122, 31, 31, 0.514));
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+footer p {
+    margin: 1%;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width:600px) {
+
+    header {
+        grid-area: a;
+        background-image: url(../img/fondoHeader.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 100vh 100vw rgba(100, 100, 100, 0.486);
+        
+    }
+
+    .nav-bar {
+        display:flex;
+        flex-direction: column;
+        margin: 2vh 10%;
+    
+    }
+    
+    .nav-bar__logo {
+        align-self: center;
+    }
+
+    .nav-bar__logo img {
+        width: 180px;
+        border-radius: 50%;
+        border: rgb(5, 5, 5) solid 15px;
+    }
+    
+    .nav-bar__list {
+        display:flex;
+        list-style: none;
+        justify-content: space-between;
+        column-gap: 2em;
+        
+    }
+    
+    .nav-bar__item a{
+        font-size: 2rem;
+        background-color: rgb(202, 16, 10);
+        border-radius: 40%;
+        text-decoration: none;
+    }
+    
+    
+    .titulo {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+}
