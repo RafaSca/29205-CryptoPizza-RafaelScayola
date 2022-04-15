@@ -1,0 +1,23 @@
+header{
+    background-image: url(../img/fondoHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 100vh 100vw rgba(100, 100, 100, 0.486);
+    
+}
+
+.nav-link {
+    color: whitesmoke !important;
+}
+
+.myBackgroundMain {
+    background-image: url(../img/fondoBody.jpg);
+    background-size: cover;
+    box-shadow: inset 100vh 100vw rgba(100, 100, 100, 0.486);
+    height: 100vh;
+}
+
+.main__img img{
+    height: 20vh;
+    width: auto;
+}
